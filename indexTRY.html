@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width. initial-scale=1.0">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./styleTRY.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Biglietto Treno - form</title>
+
+  </head>
+
+
+  <body>
+      <div class="wrapper">
+        <h1 class="h1_title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="form_dati">
+          <div class="row">
+            <div class="col">
+              <label for="nome-utente"> Nome Cognome</label>
+              <input id="nome-utente" type="text" name="" value="" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="col">
+              <label for="km"> KM da percorrere</label>
+              <input id="km"type="number" name="" value="" placeholder="km da percorrere">
+            </div>
+            <div class="col">
+              <label for="fascia-eta"> Fascia d'et&agrave;</label>
+              <select id="fascia-eta" class="">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <button id="genera" class="btn">Genera</button>
+            <button id="annulla" class="btn">Annulla</button>
+          </div>
+        </div>
+      </div>
+      <h2 class="h1_title">IL TUO BIGLIETTO</h2>
+      <div class="biglietto">
+        <div class="box_passeggero">
+          <h2 class="h2_style">Dettaglio passeggeri</h2>
+        </div>
+        <div class="dettaglio-biglietto">
+            <div class="border">
+            <div class="style">
+            <h3 class="h3_style">Nome Passeggero</h3>
+            <h4 id="nome-passeggero"></h4>
+            </div>
+            <div class="style2">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="offerta"></td>
+                    <td id="carrozza"></td>
+                    <td id="codice-cp"></td>
+                    <td id="costo-biglietto"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        </div>
+      <script src="./myscriptTRY.js" charset="utf-8"></script>
+  </body>
+</html>
